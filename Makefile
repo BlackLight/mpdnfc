@@ -1,7 +1,7 @@
 all:
 	mkdir -p bin
-	gcc -g -o bin/nfc_detect nfc_detect.c -lnfc
+	gcc -g -o bin/mpdnfc mpdnfc.c -lnfc
 
 clean:
-	rm bin/*
+	rm -f bin/*
 
