@@ -14,7 +14,7 @@
 
 #define MPD_HOST "127.0.0.1"
 #define MPD_PORT 6600
-#define POLL_INTERVAL_SEC 5
+#define POLL_INTERVAL_SEC 2
 
 #define RET_OK      0
 #define RET_NOT_OK -1
@@ -266,7 +266,6 @@ int main(int argc, const char *argv[]) {
         }
 
         mpd_close(&mpd_sd);
-		sleep(2);
 	}
 
 #if 0
